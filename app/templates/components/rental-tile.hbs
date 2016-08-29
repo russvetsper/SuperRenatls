@@ -1,0 +1,9 @@
+<li>
+  {{rentalDetails.owner}}'s {{rentalDetails.type}} in {{rentalDetails.city}}
+  {{#if isImageShowing }}
+    <p><img src={{rentalDetails.image}} alt={{rentalDetails.type}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Show image</button>
+  {{/if}}
+  <button class="btn btn-danger btn-lg" {{action 'delete' rentalDetails}}>Immediately Delete (WARNING: ACTION CANNOT BE UNDONE)</button>
+</li>
