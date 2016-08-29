@@ -5,5 +5,7 @@
   {{else}}
     <button {{action 'imageShow'}}>Show image</button>
   {{/if}}
+  {{update-rental rentalDetails1=rentalDetails update="update"}}
+  {{log rentalDetails}}
   <button class="btn btn-danger btn-lg" {{action 'delete' rentalDetails}}>Immediately Delete (WARNING: ACTION CANNOT BE UNDONE)</button>
 </li>
