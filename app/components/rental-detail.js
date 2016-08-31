@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         if(params[key]!==undefined){
           rental.set(key,params[key]);
         }
-      })
+      });
       rental.save();
       this.transitionTo('index');
     }
