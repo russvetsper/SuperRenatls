@@ -11,9 +11,10 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model.cities as |city|}}
-  <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}{{city.id}}</li>
+  <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}} IN {{city.country}}</li>
   {{/each}}
 </ul>
+{{new-city saveCity="saveCity"}}
 
 <hr>
 {{#link-to 'about'}}About{{/link-to}}
