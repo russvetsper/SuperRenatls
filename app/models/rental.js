@@ -5,6 +5,7 @@ export default DS.Model.extend({
   city: DS.belongsTo('city', { async: true }),
   type: DS.attr(),
   image: DS.attr(),
-  bedrooms: DS.attr()
+  bedrooms: DS.attr(),
+  cost: DS.attr()
 
 });
