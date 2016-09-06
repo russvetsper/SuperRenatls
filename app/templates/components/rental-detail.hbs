@@ -2,5 +2,11 @@ Located in {{rental.city.name}}, this {{rental.bedrooms}} bedroom {{rental.type}
 available by arrangement through {{rental.owner}}.
 <br>
 <p><img src={{rental.image}} alt={{rental.type}}></p>
+<p>Renting on Super Rentals since: {{rental.date_added}}</p>
 
 <button {{action 'delete' rental}}>Delete</button>
+
+<div>
+  <h3>Map of {{rental.owner}}'s {{rental.type}}</h3>
+  {{google-map rental=rental}}
+</div>
